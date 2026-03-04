@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chowking - Drinks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="chowking-logo.png" alt="Chowking Official Logo" width="150">
+    <h1>Chowking Restaurant</h1>
+
+    <nav>
+        <a href="maincourse.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2>Drinks</h2>
+
+    <div class="item">
+         <img src="Milktea.webp"  alt="milkT" width="150"> 
+        <span>Chowking Pearl Milk Tea (Medium) (₱69.00)</span>
+        <input type="number" id="milkTQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+         <img src="Iced-Tea-650x547-1.png"  alt="icedT" width="150"> 
+        <span>Iced Tea (Medium) (₱77.00)</span>
+        <input type="number" id="icedTQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+         <img src="coke.png"  alt="coke" width="150"> 
+        <span>Coke (Medium) (₱69.00)</span>
+        <input type="number" id="cokeQty" min="0" value="0">
+    </div>
+
+    <br>
+    <label>Enter Age:</label>
+    <input type="number" id="age" min="0"><br><br>
+
+    <input type="checkbox" id="seniorCheck">
+    <label for="seniorCheck">Senior Citizen</label><br><br>
+
+    <button onclick="computeDrinks()">Place Order</button>
+
+    <h3>Original Total: ₱<span id="originalDrinks">0.00</span></h3>
+    <h3>Discount (12%): ₱<span id="discountDrinks">0.00</span></h3>
+    <h3>Final Payable: ₱<span id="finalDrinks">0.00</span></h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

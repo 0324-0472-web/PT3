@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chowking - Main Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="chowking-logo.png" alt="Chowking Official Logo" width="150">
+    <h1>Chowking Restaurant</h1>
+
+    <nav>
+        <a href="maincourse.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2>Main Course</h2>
+
+    <div class="item">
+        <img src="Chick-n-Sauce-Platter.jpg"  alt="ChickenS" width="150"> 
+        <span>Chick 'n Sauce (₱106.00)</span>
+        <input type="number" id="chickenSQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+         <img src="Sweet-_-Sour-Chicken-850x715-1.webp"  alt="SSChicken" width="150"> 
+        <span>Sweet 'n' Sour Chicken (₱106.00)</span>
+        <input type="number" id="sschickenQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+         <img src="Pork-Chao-Fan-with-Fried-Chicken.jpg"  alt="PorkChaoFan" width="150"> 
+        <span>Pork Chao Fan w/ Fried Chicken (₱134.00)</span>
+        <input type="number" id="porkchaoQty" min="0" value="0">
+    </div>
+
+    <br>
+    <label>Enter Age:</label>
+    <input type="number" id="age" min="0"><br><br>
+
+    <input type="checkbox" id="seniorCheck">
+    <label for="seniorCheck">Senior Citizen</label><br><br>
+
+    <button onclick="computeMainCourse()">Place Order</button>
+
+    <h3>Original Total: ₱<span id="originalMain">0.00</span></h3>
+    <h3>Discount (12%): ₱<span id="discountMain">0.00</span></h3>
+    <h3>Final Payable: ₱<span id="finalMain">0.00</span></h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
