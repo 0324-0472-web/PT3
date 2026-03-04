@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chowking - Dessert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="chowking-logo.png" alt="Chowking Official Logo" width="150">
+    <h1>Chowking Restaurant</h1>
+
+    <nav>
+        <a href="maincourse.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2>Dessert</h2>
+
+    <div class="item">
+        <img src="haloSm.webp" alt="haloS" width="150">
+        <span>Halo-Halo Supreme (Small) (₱76.00)</span>
+        <input type="number" id="haloSQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <img src="Halo-Halo.webp" alt="haloM" width="150">
+        <span>Halo-Halo Supreme (Medium) (₱100.00)</span>
+        <input type="number" id="haloMQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <img src="Buchi-320x283-1.webp" alt="Buchi" width="150">
+        <span>Buchi (Sweet Sesame Balls) (₱37.00)</span>
+        <input type="number" id="buchiQty" min="0" value="0">
+    </div>
+
+    <br>
+    <label>Enter Age:</label>
+    <input type="number" id="age" min="0"><br><br>
+
+    <input type="checkbox" id="seniorCheck">
+    <label for="seniorCheck">Senior Citizen</label><br><br>
+
+    <button onclick="computeDesert()">Place Order</button>
+
+    <h3>Original Total: ₱<span id="originalDessert">0.00</span></h3>
+    <h3>Discount (12%): ₱<span id="discountDessert">0.00</span></h3>
+    <h3>Final Payable: ₱<span id="finalDessert">0.00</span></h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
